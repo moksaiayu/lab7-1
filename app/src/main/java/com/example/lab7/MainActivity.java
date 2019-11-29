@@ -36,8 +36,6 @@ public class MainActivity extends AppCompatActivity {
             }
         } );
     }
-
-
     private void runThread() {
         new Thread ( new Runnable () {
             @Override
@@ -56,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
             }
         } ).start ();
     }
-
     private Handler mHandler = new Handler ( new Handler.Callback () {
         @Override
         public boolean handleMessage(Message msg) {
@@ -73,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
             return false;
         }
     } );
-
     private void runAsyncTask() {
         new AsyncTask<Void, Integer, Boolean> () {
             @Override
